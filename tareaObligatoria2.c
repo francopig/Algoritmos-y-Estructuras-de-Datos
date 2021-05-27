@@ -23,7 +23,7 @@ int main(){
 	scanf("%s",&continuar);
 	while (strcmp (continuar, "si") == 0){
 		
-		//Parte 1 - Recopilación de datos
+		//Parte 1 - RecopilaciÃ³n de datos
 		
 		printf("Ingresar patente del vehiculo: ");
 		fflush(stdin);
