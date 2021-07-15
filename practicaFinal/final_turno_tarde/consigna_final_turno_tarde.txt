@@ -1,0 +1,47 @@
+Examen final TT
+Se desea desarrollar una aplicación para registrar los gastos a efectuar por los empleados de una empresa de un determinado departamento. El sector de Finanzas asigna un presupuesto anual a dicho departamento, con un monto en pesos asignado a cada mes, y permite que generen gastos hasta ese monto de presupuesto, en cada mes.
+
+De cada gasto de empleado se conocen los siguientes datos:
+
+Mes en el que se quiere efectuar el gasto (valor entero de 1 a 12).
+
+Monto del gasto (valor real)
+
+Armar un menú con las siguientes opciones. Hacer una función menú que despliegue las opciones, ingrese la opción elegida por teclado y devuelva el valor al programa principal.
+
+Opción 1 - Ingresar presupuesto de cada mes:
+
+En esta opción, se deberá llamar a una función para cargar los montos en pesos de presupuesto de cada mes por teclado.  Sugerencia: utilizar para guardar dicha información un vector de 12 posiciones reales, donde la posición 0 tendrá el presupuesto del mes 1 y así sucesivamente.
+
+Opción 2 - Ingresar gastos a efectuar por los empleados:
+
+En esta opción, se deberán ingresar los datos de un gasto a efectuar por un empleado por teclado.
+
+Luego deberá llamar a una función que tendrá como parámetros los datos de un gasto y el vector que se cargó en la opción 1 y deberá hacer las siguientes operaciones:
+
+Si hay presupuesto suficiente para afrontar la totalidad del gasto en el mes solicitado, deberá actualizar el presupuesto deduciendo dicho gasto e informará por pantalla un cartel indicando "Gasto aprobado”, el monto del gasto, el mes en que se efectuará dicho gasto y el monto de presupuesto restante.
+
+Si no hay presupuesto suficiente para afrontar el gasto en el mes solicitado mostrar un cartel "Gasto rechazado”.
+
+Opción 3 - Mostrar el presupuesto que quedó sin utilizar.
+
+En esta opción deberá mostrar en el main, el vector de presupuesto cargado y actualizado en las opciones 1 y 2 respectivamente, mes a mes.
+
+Opción 4 - Salir.
+
+Diseñar un algoritmo en Lenguaje C. Utilizar aritmética de punteros para el manejo de los vectores de las funciones de opciones 1 y 2. No utilizar variables globales.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Temas teóricos:
+
+Indicar si son V (Verdadero)  o F (Falso)  las siguientes  afirmaciones (escribir las respuestas en una línea de comentario en el algoritmo en Lenguaje C, al comienzo del programa:   /*       a)  ...b)  c)...d)...    */ ).
+
+a) Los elementos de un vector se almacenan en posiciones distribuidas en la memoria.
+b) El método de Selección consiste en:
+Buscas el elemento más pequeño del vector.
+Lo intercambias con el elemento ubicado en la primera posición del vector.
+Buscas el segundo elemento más pequeño del vector.
+Lo intercambias con el elemento que ocupa la segunda posición en el vector.
+Repites este proceso hasta que hayas ordenado todo el vector.
+c) La función main() es simplemente una función más de un programa en Lenguaje C, con la particularidad de que es el punto de entrada o comienzo del programa.
+d) Una variable tipo static puede ser utilizada en una función, inicializada con un valor y no puede ser modificada.
