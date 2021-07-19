@@ -40,7 +40,7 @@ void validacion(int,int,int);
 	  				scanf("%i", &inscripcion);
 	  				
 	  				//validacion 
-	  				while(inscripcion<1 || inscripcion>50){
+	  				while(inscripcion<1 || inscripcion>LONGITUD){
 	  				 	printf("numero fuera de rango, reintentar \n");
 	  				 	printf("Ingrese n de participante: \n");
 						scanf("%i", &inscripcion);	
@@ -51,7 +51,7 @@ void validacion(int,int,int);
 	  				printf("Tiempo en minutos que llevo terminar la prueba:");
 	  				scanf("%f", &tiempo);
 	  				
-	  				//llamo al a funcion y paso los par·metros
+	  				//llamo al a funcion y paso los par√°metros
 	  				cargarDatos(inscripcion,tipoPrueba,tiempo,vInscripciones,vPruebas,vTiempo,i);  	
 	  				
   					printf("Participante registrado! \n");
