@@ -24,7 +24,6 @@ void validacion(int,int,int);
  	int inscripcion;
  	char tipoPrueba;
  	float tiempo;
-	int i = 0;
 	int contadorParticipantes;	//para el Punto 2A
 	float acumuladorTiempo; // para el punto 2B
 	int n;
@@ -52,10 +51,9 @@ void validacion(int,int,int);
 	  				scanf("%f", &tiempo);
 	  				
 	  				//llamo al a funcion y paso los parámetros
-	  				cargarDatos(inscripcion,tipoPrueba,tiempo,vInscripciones,vPruebas,vTiempo,i);  	
+	  				cargarDatos(inscripcion,tipoPrueba,tiempo,vInscripciones,vPruebas,vTiempo,inscripcion);  	
 	  				
   					printf("Participante registrado! \n");
-  					i++; //aumento el contador que utilizo para los participantes
   					system("pause");system("cls");
 				
   				break;
@@ -100,9 +98,9 @@ void validacion(int,int,int);
  }
  
  void cargarDatos (int inscripcion, char tipo, float tiempo,int *vInscripciones,char *vPruebas,float *vTiempo,int i){
-	*(vInscripciones+i) = inscripcion;
-	*(vPruebas + i) = tipo;
-	*(vTiempo + i) = tiempo;
+	*(vInscripciones+(i+1)) = inscripcion;
+	*(vPruebas + (i+1)) = tipo;
+	*(vTiempo + (i+1)) = tiempo;
  }
  
  int informeA(char *vPruebas, int longitud){
